@@ -590,7 +590,7 @@ input{
     .top-bar-container > div:nth-child(3){
      background-color: yellow;
      height: 2rem;
-     max-width: 2rem;
+     max-width: 1rem;
      
 }
 }
