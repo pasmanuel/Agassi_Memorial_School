@@ -59,7 +59,7 @@
 .rolling-text{
     text-align: center;
     font-size: 1.2rem;
-    line-height: 35px;
+    line-height: 30px;
     align-items: center;
 }
 
@@ -68,7 +68,30 @@
     animation: anim 12s infinite;
 }
 
+
 @keyframes anim {
+    0% {
+        margin-top: 0;
+    }
+
+    25% {
+        margin-top: -40px;
+    }
+
+    50% {
+        margin-top: -70px;
+    }
+
+    75% {
+        margin-top: -100px;
+    }
+
+    100% {
+        margin-top: -120px;
+    }
+}
+
+/* @keyframes anim {
     0% {
         margin-top: 0;
     }
@@ -87,7 +110,7 @@
 
     100% {
         margin-top: -200px;
-    }
+    } */
 }
 
 .nav{
@@ -589,7 +612,7 @@ input{
     .top-bar-container > div:nth-child(1),
     .top-bar-container > div:nth-child(3){
      background-color: yellow;
-     height: 2rem;
+     /* height: 2rem; */
      max-width: 1rem;
      
 }
