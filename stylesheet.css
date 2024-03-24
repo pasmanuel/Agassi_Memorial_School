@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+/* to top bar */
 .top-bar-container {
     display: flex;
     width: 100%;
@@ -111,17 +111,32 @@
     100% {
         margin-top: -200px;
     } */
+
+/* To nav bar */
+
+.container{
+    display: flex;
+    align-items: center;
 }
 
-.nav{
+
+
+.nav-item{
+    color: white;
+}
+
+
+
+
+.navbar-main-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 2rem;
+    /* padding-right: 2rem;
     padding-left: 2rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    border-radius: 5px;
+    border-radius: 5px; */
 }
 
 .list{
@@ -195,11 +210,10 @@
     color: white;
 }
 
-.top{
-    height: 100px;
-}
-
-
+.logo {
+    max-width: 50px; /* Set max width for the logo */
+    height: auto; /* Maintain aspect ratio */
+  }
 
 .email{
     color:white;
@@ -607,8 +621,8 @@ input{
     color: black;
 }
 
-
-@media screen and (max-width:768px){
+/* To New meida query */
+@media screen and (max-width:868px){
     .top-bar-container > div:nth-child(1),
     .top-bar-container > div:nth-child(3){
      background-color: yellow;
@@ -616,6 +630,18 @@ input{
      max-width: 1rem;
      
 }
+
+/* .AMS{
+    display: none;
+} */
+
+.navbar-main-container{
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 }
  
    
