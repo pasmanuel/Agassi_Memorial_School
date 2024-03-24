@@ -121,10 +121,28 @@
 
 
 
-.nav-item{
-    color: white;
+/* .dropdown-menu {
+    transition: opacity 0.3s ease;
 }
 
+.dropdown-menu.show {
+    opacity: 1
+} */
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dropdown-menu {
+    animation: slideIn 0.3s ease; /* Apply animation to the dropdown menu */
+}
 
 
 
@@ -640,6 +658,7 @@ input{
     justify-content: space-between;
     align-items: center;
 }
+ 
 
 
 }
