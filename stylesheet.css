@@ -19,6 +19,7 @@
      background-color: yellow;
      height: 2rem;
      max-width: 5rem;
+     width: 400px;
      
 }
 
@@ -145,9 +146,6 @@
     display: inline-block;
 }
 
-.{
-    margin: 1rem;
-}
 
 .dropdown-menu{
     display: none;
@@ -198,16 +196,9 @@
 
 
 
-.navbar-main-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* padding-right: 2rem;
-    padding-left: 2rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    border-radius: 5px; */
-}
+
+
+
 
 .list{
     display: flex;
@@ -700,17 +691,6 @@ input{
      max-width: 1rem;
      
 }
-
-/* .AMS{
-    display: none;
-} */
-
-.navbar-main-container{
-    display: block;
-    justify-content: space-between;
-    align-items: center;
-}
- 
 
 
 }
