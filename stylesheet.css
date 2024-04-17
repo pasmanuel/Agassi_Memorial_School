@@ -175,7 +175,7 @@
   }
 
 .dropdown-menu {
-    animation: slideIn 0.3s ease; /* Apply animation to the dropdown menu */
+    animation: slideIn 0.3s ease;
 }
 
  .nav-item.active .nav-link {
@@ -184,10 +184,6 @@
 
 } 
 
-/* .nav-item.active .dropdown-menu{
-    color: #fff; 
-
-} */
 
 .active:before{
     background: green;
@@ -226,10 +222,25 @@
     /* border: 0.5rem solid yellow; */
 }
 
-.homepage-img{
-    height: 32rem;
-    width: 84rem;
+.navbar-br{
+    font-size: 30px;
 }
+
+
+
+/* to carousel- scrolling main image*/
+.carousel-scroll{
+    margin-top: 0px;
+}
+
+.sticky-sidebar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: calc(23vh - 100px); /* Adjust according to your layout */
+    /* overflow-y: auto; Enable vertical scrolling if content exceeds the height */
+    z-index: 999;
+  }
 
 .section2{
     display: flex;
@@ -272,7 +283,7 @@
 }
 
 .logo {
-    max-width: 50px; /* Set max width for the logo */
+    max-width: 40px; /* Set max width for the logo */
     height: auto; /* Maintain aspect ratio */
   }
 
@@ -403,7 +414,6 @@
     border-radius: 10px;
     cursor: pointer;
 }
-
 .vision{
     background-color: red;
     /* max-width: 25%; */
@@ -691,15 +701,19 @@ input{
      max-width: 1rem;
      
 }
-
+.navbar-br {
+    font-size: 15px;
+}
 
 }
 
-@media(max-width:991px){
+@media(min-width:786px){
     .sidebar{
         background-color:rgba(255, 255, 255, 0.15);
         backdrop-filter: blur(10px);
     }
+
+   
 }
  
    
