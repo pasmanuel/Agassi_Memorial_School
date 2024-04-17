@@ -238,6 +238,55 @@
     object-fit: cover; /* Ensure the image covers the entire area */
   }
 
+  .carousel-caption {
+    animation: slideIn 0.5s ease-in-out forwards;
+    opacity: 0;
+  }
+
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /* animations */
+
+
+  .carousel-caption {
+    opacity: 0;
+    animation-fill-mode: forwards; /* Ensure the final animation state persists */
+  }
+
+  /* Define different animations for each caption */
+  @keyframes slideIn1 {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes slideIn2 {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+
+  @keyframes slideIn3 {
+    from { opacity: 0; transform: scale(0.5); }
+    to { opacity: 1; transform: scale(1); }
+  }
+
+  @keyframes slideIn4 {
+    from { opacity: 0; transform: rotate(45deg); }
+    to { opacity: 1; transform: rotate(0); }
+  }
+
+  /* Apply different animations to each caption */
+  .carousel-item:nth-child(1) .carousel-caption { animation: slideIn1 1s ease-in-out 1s forwards; }
+  .carousel-item:nth-child(2) .carousel-caption { animation: slideIn2 1s ease-in-out 1s forwards; }
+  .carousel-item:nth-child(3) .carousel-caption { animation: slideIn3 1s ease-in-out 1s forwards; }
+  .carousel-item:nth-child(4) .carousel-caption { animation: slideIn4 1s ease-in-out 1s forwards; }
 .sticky-sidebar {
     position: -webkit-sticky;
     position: sticky;
@@ -245,6 +294,14 @@
     height: calc(23vh - 100px); /* Adjust according to your layout */
     /* overflow-y: auto; Enable vertical scrolling if content exceeds the height */
     z-index: 999;
+  }
+
+  .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
   }
 
 .section2{
