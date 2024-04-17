@@ -233,6 +233,11 @@
     margin-top: 0px;
 }
 
+.carousel-item img {
+    height: 600px; /* Adjust as needed */
+    object-fit: cover; /* Ensure the image covers the entire area */
+  }
+
 .sticky-sidebar {
     position: -webkit-sticky;
     position: sticky;
