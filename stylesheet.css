@@ -40,6 +40,12 @@
 
 }
 
+.box-shadow{
+
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+
+
 /* @keyframes roll {
     from { transform: translateX(100%); }
     to { transform: translateX(-100%); }
@@ -157,29 +163,34 @@
 }
 
 .dropdown-menu >li > a{
-    color: black;
+    color:white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    font-size: 1.2rem;
 }
 
 .dropdown:hover .dropdown-menu{
     display: block;
 }
 
-.dropdown-menu > li a:hover {background-color:#f9f9f9}
+.dropdown-menu > li a:hover {
+    background-color:#f9f9f9;
+    color:yellow;
+}
 
 .nav-item:hover .nav-link {
     background-color: #3e8e41;
-    color: #f9f9f9;
+    color: red;
   }
 
 .dropdown-menu {
     animation: slideIn 0.3s ease;
+    width: 300px;
 }
 
  .nav-item.active .nav-link {
-    background-color:green ; 
+    /* background-color:green ;  */
     color: #fff; 
 
 } 
@@ -308,6 +319,8 @@
     border-radius: 5px; /* Optional: Add border-radius for rounded corners */
   }
 
+
+
  /* to-admission-in-progress-bar  */
 
 
@@ -330,7 +343,7 @@
 
 .button{
     cursor: pointer;
-    background-color: lawngreen;
+    background-color: white;
     border: none;
     border-radius: 5px;
     font-size: large;
@@ -342,7 +355,7 @@
 }
 
 .button:hover{
-    background-color: royalblue;
+    background-color: yellow;
     color: white;
 }
 
