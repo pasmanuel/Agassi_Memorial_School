@@ -859,7 +859,7 @@ input{
     @media (max-width: 786px) {
         .welcome {
             background-size: contain;
-            background-attachment: fixed; /* Revert background attachment to scroll */
+            background-attachment: scroll; /* Revert background attachment to scroll */
         }
 }
    
