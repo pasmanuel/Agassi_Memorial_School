@@ -412,14 +412,6 @@
     
 }
 
-.welcome{
-    background-image: url("./Images/roupsteachers.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    object-fit: cover;
-}
 
 
 /* .wel-msg{
@@ -856,11 +848,8 @@ input{
         clip-path: polygon(50% 00%, 100% 50%, 50% 100%,0% 50%);
     }
 
-    @media (max-width: 786px) {
-        .welcome {
-            background-size: contain;
-            background-attachment: scroll; /* Revert background attachment to scroll */
-        }
+
+       
 }
    
   
