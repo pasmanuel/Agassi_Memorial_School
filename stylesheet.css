@@ -872,7 +872,7 @@ input{
        
 }
    
-.carousel-inner-1 {
+.academic-sub  {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -881,15 +881,40 @@ input{
     align-items: center;
     justify-content: center;
   }
+
+
+  .card {
+    position: relative; /* Needed for hover effects */
+    width: 300px; /* Adjust card width as needed */
+    background-color: #fff; /* White background for cards */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    border-radius: 10px; /* Rounded corners for cards */
+    margin: 10px; /* Add some margin between cards */
+    overflow: hidden; /* Needed to contain pop-up content */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+  }
+  
+
+.card:hover {
+    transform: scale(1.05); /* Enlarge card slightly on hover */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+
+  }
+  
+  .card:hover img {
+    opacity: 1; /* Make image fully opaque on hover */
+  }
   
   .card {
     flex: 0 0 auto;
-    margin-right: 1rem;
-  }
-
-  .carousel {
-    height: 200px; /* Adjust the value as needed */
-  }
+     margin-right: 0.5rem;
+} 
+.card-img-top{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+ 
   
   .carousel-inner,
   .carousel-item {
@@ -897,7 +922,7 @@ input{
   }
   
   @media (max-width: 767px) {
-    .carousel-inner-1 {
+    .academic-sub{
       flex-wrap: wrap;
       justify-content: center;
     }
