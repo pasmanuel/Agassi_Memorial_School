@@ -310,13 +310,13 @@
 
   .carousel-caption {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
   }
   .carousel-item {
-    border: 2px solid black; /* Add a black border around carousel items */
+    /* border: 2px solid black;  */
     border-radius: 5px; /* Optional: Add border-radius for rounded corners */
   }
 
@@ -433,13 +433,13 @@
     margin-bottom: 2rem;
 } */
 
-.dir-img{
+ .dir-img{
     margin-top: 1rem;
-   
      height:500px; 
-    width: 500px; 
-    clip-path: polygon(50% 00%, 100% 50%, 50% 100%,0% 50%);
-}
+    width: 400px; 
+    /* clip-path: polygon(50% 00%, 100% 50%, 50% 100%,0% 50%); */
+    object-fit: cover;
+} 
 
 .img-dir{
     margin-top: 3rem;
@@ -771,6 +771,40 @@ input{
     color: black;
 }
 
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  color: white;  /* White text */
+  border: none;  /* Remove default border */
+  padding: 10px;  /* Add padding for spacing */
+  /* Other styles as needed */
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Darker on hover */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  font-size: 36px; /* Adjust font size as needed */
+  color: inherit; /* Inherit color from parent element */
+  width: 50px;
+  height: 50px;
+}
+/* update image slider */
+
+
+
+
+
+
+
+
+
+
+
 /* To New meida query */
 @media screen and (max-width:868px){
     .top-bar-container > div:nth-child(1),
@@ -854,13 +888,14 @@ input{
     }  
     
     
-    .dir-img{
+ .dir-img{
         margin-top: 1rem;
-       
-         height:350px; 
-        width: 350px; 
-        clip-path: polygon(50% 00%, 100% 50%, 50% 100%,0% 50%);
-    }
+         height:380px; 
+        width: 100%; 
+
+        /* clip-path: polygon(50% 00%, 100% 50%, 50% 100%,% 50%); */
+    } 
+
 
     .wel-msg-main p{
         color: white;
@@ -871,6 +906,8 @@ input{
     
        
 }
+
+
    
 .academic-sub  {
     display: flex;
@@ -883,56 +920,159 @@ input{
   }
 
 
-  .card {
-    position: relative; /* Needed for hover effects */
-    width: 300px; /* Adjust card width as needed */
-    background-color: #fff; /* White background for cards */
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow */
-    border-radius: 10px; /* Rounded corners for cards */
-    margin: 10px; /* Add some margin between cards */
-    overflow: hidden; /* Needed to contain pop-up content */
-    transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
-  }
-  
-
-.card:hover {
-    transform: scale(1.05); /* Enlarge card slightly on hover */
-    transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
-
-  }
-  
-  .card:hover img {
-    opacity: 1; /* Make image fully opaque on hover */
-  }
-  
-  .card {
-    flex: 0 0 auto;
-     margin-right: 0.5rem;
-} 
-.card-img-top{
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
+  .carousel-item {
+    text-align: center;
 }
+.carousel-item .carousel-img{
+    border-radius: 50%;
+    width:150px;
+    height: 150px;
+    object-fit: cover;
+}
+.review-card {
+    padding: 20px;
+    background-color:rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 50%;
+}
+
+/* .specific-carousel-item{
+    background-color: rgba(128, 118, 118, 0.2);
+} */
+
+#reviewCarousel{
+    background-image: url('./Images/IMG-20240416-WA0121.jpg');
+    /* object-fit: cover; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1rem;
+}
+
+.footer {
+    background-color: green;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .footer-column {
+    width: 25%;
+    padding: 10px;
+  }
+  
+  .footer-logo {
+    width: 100px;
+    max-width: 100%;
+  }
+  
+  .footer-email {
+    margin-top: 10px;
+    font-size: 0.8em;
+  }
+  
+  .footer-heading {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+  }
+  
+  .footer-links,
+  .footer-social {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links li,
+  .footer-social li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-social i {
+    font-size: 1.5em;
+    margin-right: 10px;
+  }
+  li a {
+    text-decoration: none;
+    color: white;
+  }
+  /* Media queries for responsiveness */
+  
+  @media screen and (max-width: 768px) {
+    .footer-column {
+      width: 50%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .footer-column {
+      width: 100%;
+    }
+
+    .review-card {
+        padding: 20px;
+        background-color:rgba(255, 255, 255, 0.9);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: inline-block;
+        width: 70%;
+    }
+
+    .carousel-item .carousel-img{
+        border-radius: 50%;
+        width:100px;
+        height: 100px;
+        object-fit: cover;
+    }
+  }
+  
+
+
+  @media screen and (max-width: 768px) { /* Adjust max-width for your needs */
+    .carousel-control-prev,
+    .carousel-control-next {
+      opacity: 0.5; /* Initial semi-transparent state */
+    }
+  
+    .carousel-control-prev:hover,
+    .carousel-control-next:hover {
+      opacity: 1; /* Full opacity on hover */
+    }
+  }
+  
+
+
+  
+
+
+  
+
+
  
   
-  .carousel-inner,
-  .carousel-item {
-    height: 100%;
-  }
+  
   
   @media (max-width: 767px) {
     .academic-sub{
-      flex-wrap: wrap;
+      /* flex-wrap: wrap; */
       justify-content: center;
     }
   
-    .card {
-      margin-right: 0;
-      margin-bottom: 1rem;
-    }
+    
   }
  
 
 
 
+
+
+  
