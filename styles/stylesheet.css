@@ -356,6 +356,7 @@
     align-items:center;
     justify-content: space-evenly;
 	color:whitesmoke;
+	padding:70px 0;
 }
 
 .admission-text{
@@ -517,6 +518,7 @@
 
 a:hover{
 	text-decoration:none !important;
+	
 }
 
 .msg{
