@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="./styles/stylesheet.css">
     <title>Home - Agassi Memorial School</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
     <section class=" sticky-sidebar">
         <nav class="navbar navbar-expand-lg bg-white box-shadow w-100">
             <div class="container">
-                <img src="./Images/LOGO.jpeg" alt="Logo" class="logo"> 
+                <img src="./Images/LOGO.png" alt="Logo" class="logo"> 
                 <a class="navbar-br text-dark text-decoration-none " href="#">AGASSI MEMORIAL SCHOOL</a>
             <!-- Toggle btn -->
             <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
@@ -98,28 +98,28 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="./Images/groups22.jpg" class="d-block w-100" alt="...">
+                <img src="./Images/hero-1.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption  d-md-block">
-                    <h2>Welcome to Our Community</h2>
-                  <p>Some representative placeholder content for the first slide.</p>
+                    <h2>Nurturing Bright Minds</h2>
+                  <p>Your Ward's Birthright</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="./Images/groupsjhs.jpg" class="d-block w-100" alt="...">
+                <img src="./Images/trip.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption  d-md-block">
                   <h2>Second slide label</h2>
                   <p>Discover a nurturing environment where students thrive academically and socially, preparing them for a bright future.</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="./Images/markella.jpg" class="d-block w-100" alt="...">
+                <img src="./Images/hero-3.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption  d-md-block">
                     <h2>Excellence in Education</h2>
                     <p>Our curriculum is designed to challenge and inspire students, fostering a love for learning and critical thinking skills.</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="./Images/Cadet 2.jpg" class="d-block w-100" alt="...">
+                <img src="./Images/hero-4.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption  d-md-block">
                     <h2>Engaging Extracurriculars</h2>
                     <p>Our programs emphasize leadership and community service, helping students become responsible and engaged citizens.</p>
@@ -138,15 +138,8 @@
           
     </section>
 
-    <!-- to-admission-in-progress-bar -->
-    <section class="to-admission-in-progress-bar">
-    
-        <h1 class="admission-text ">Admission In Progress</h1>
-         <button class="button">
-            <a class="ba" href="Admission.html"></a> Enroll Now </a>
-         </button>
-    </section>
-    <!-- <section class="">
+
+    <!--<section class="">
         <div class="container text-center">
             <div class="row row-cols-2">
                 <div class="col">
@@ -194,23 +187,257 @@
                     Read More <i class="bi bi-chevron-double-right"></i>
                 </button> -->
                 
-                <button class="read-more">
+                <button class="read-more" role="button">
                     <a href="">
                         Read more
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8.009 8.009 0 0 1-8 8z"/><path d="M11.293 8.707 13.586 11H8v2h5.586l-2.293 2.293 1.414 1.414L17.414 12l-4.707-4.707-1.414 1.414z"/></svg>
                     </a>
                 </button>  
             </div>
-            <div class="col">
-                <img class="dir-img" src="./Images/About-img.jpg" alt="Directors-Image">
+            <div class="col img-holder">
+                <img class="dir-img" src="./Images/headmaster.jpg" alt="Directors-Image">
             </div>
         </div>
     </section> 
     <section>
         <hr>
-    </section>   
+    </section>
 
-    <h1 class="at">ACADEMIC PROGRAMMES</h1>
+	<style>
+		.round{
+			width:200px;
+			height:200px;
+			border-radius:50%;
+			border:2px solid #5d0b06;
+			margin:0 auto;
+		}
+		
+		.holders{
+			display:flex;
+			justify-content:space-around;
+		}
+		.s-text{
+			text-align:center;
+			color:#5d0b06;
+		}
+		
+		.s-text h3{
+			margin:0;
+		}
+		
+		.is-holder{
+			width:20%;
+		}
+		
+		.is-title{
+			text-transform:uppercase;
+		}
+	</style>
+	<section style="margin-block:100px; ">
+		<div class="holders">
+			<div class="is-holder">
+				<div class="round"></div>
+				<div class="s-text">
+					<h3>AGASSI SCIENCE AND MATHS QUIZ</h3>
+					<span>Item summary here</span>
+				</div>
+			</div>
+			<div class="is-holder">
+				<div class="round"></div>
+				<div class="s-text">
+					<h3>SMARTRIBE ABACUS AND VERDIC MATHS</h3>
+					<span>Item summary here</span>
+				</div>
+			</div>
+			<div class="is-holder">
+				<div class="round"></div>
+				<div class="s-text">
+					<h3>SMARTRIBE CODING CLUB</h3>
+					<span>Item summary here</span>
+				</div>
+			</div>
+			<div class="is-holder">
+				<div class="round"></div>
+				<div class="s-text">
+					<h3>SMARTRIBE ROBOTICS CLUB</h3>
+					<span>Item summary here</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- to-admission-in-progress-bar -->
+    <section class="to-admission-in-progress-bar">
+    
+        <h1 class="admission-text ">Admission In Progress</h1>
+         <button class="button">
+            <a class="ba" href="Admission.html"></a> Enroll Now </a>
+         </button>
+    </section>
+	<style>
+		.brown{
+			background-color:#5d0b06;
+			color:whitesmoke;
+		}
+		
+		.brown div{
+			margin-block:40px;
+			//border:2px solid red;
+		}
+		
+		.half{
+			padding:20px;
+			width:50%;
+			height:50vh;
+			transition: background-color 1s ease;
+			text-align:center;
+		}
+		
+		.bestway{
+			display:flex;
+		}
+		.white{
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			color:##5d0b06;
+		}
+		
+		.half h3{
+			display:none;
+		}
+		
+		.title-1{
+			background-image:url('./Images/primary.jpg');
+			background-size:cover;
+			background-position:top;
+		}
+		
+		.title-2{
+			background-image:url('./Images/primary.jpg');
+			background-size:cover;
+			background-position:center;
+		}
+		
+		.title-3{
+			background-image:url('./Images/markella.jpg');
+			background-size:cover;
+			background-position:center;
+		}
+	</style>
+	<!--<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			const colorBoxes = document.querySelectorAll('.half');
+
+			if (colorBoxes.length === 6) {
+				setInterval(() => {
+					// Get the current background and text colors for each box
+					const colorsGroup1 = [
+						{
+							backgroundColor: window.getComputedStyle(colorBoxes[0]).backgroundColor,
+							color: window.getComputedStyle(colorBoxes[0]).color
+						},
+						{
+							backgroundColor: window.getComputedStyle(colorBoxes[3]).backgroundColor,
+							color: window.getComputedStyle(colorBoxes[3]).color
+						},
+						{
+							backgroundColor: window.getComputedStyle(colorBoxes[4]).backgroundColor,
+							color: window.getComputedStyle(colorBoxes[4]).color
+						}
+					];
+
+					const colorsGroup2 = [
+						{
+							backgroundColor: window.getComputedStyle(colorBoxes[1]).backgroundColor,
+							color: window.getComputedStyle(colorBoxes[1]).color
+						},
+						{
+							backgroundColor: window.getComputedStyle(colorBoxes[2]).backgroundColor,
+							color: window.getComputedStyle(colorBoxes[2]).color
+						},
+						{
+							backgroundColor: window.getComputedStyle(colorBoxes[5]).backgroundColor,
+							color: window.getComputedStyle(colorBoxes[5]).color
+						}
+					];
+
+					// Swap the background and text colors
+					colorBoxes[0].style.backgroundColor = colorsGroup2[0].backgroundColor;
+					colorBoxes[0].style.color = colorsGroup2[0].color;
+
+					colorBoxes[3].style.backgroundColor = colorsGroup2[1].backgroundColor;
+					colorBoxes[3].style.color = colorsGroup2[1].color;
+
+					colorBoxes[4].style.backgroundColor = colorsGroup2[2].backgroundColor;
+					colorBoxes[4].style.color = colorsGroup2[2].color;
+
+					colorBoxes[1].style.backgroundColor = colorsGroup1[0].backgroundColor;
+					colorBoxes[1].style.color = colorsGroup1[0].color;
+
+					colorBoxes[2].style.backgroundColor = colorsGroup1[1].backgroundColor;
+					colorBoxes[2].style.color = colorsGroup1[1].color;
+
+					colorBoxes[5].style.backgroundColor = colorsGroup1[2].backgroundColor;
+					colorBoxes[5].style.color = colorsGroup1[2].color;
+				}, 60000); // Change colors every 10 seconds
+			} else {
+				console.error('There should be 6 elements with the class "half".');
+			}
+		});
+
+	</script>-->
+	<section style=" width:90%; margin:100px auto;">
+		<div class="bestway">
+			<div class="white half is-title title-1">
+				<!--<h1>Agassi<br> Preschool</h1>-->
+				
+			</div>
+			<div class="brown half">
+				<div>
+					<h3>PreSchool</h3>
+					<p>
+						In the Preschool, we recognize the profound impact early experiences have on a child's future. Our commitment extends beyond basic care to fostering a nurturing environment that positively influences a child's social, emotional, and cognitive development. By promoting a sense of security, trust, and joy, we aim to lay the groundwork for future academic success and lifelong learning.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="bestway">
+			<div class="brown half">
+				<div>
+					<h3>Primary School</h3>
+					<p>
+						In the Primary, our goal is to make a lasting impact by nurturing well-rounded individuals. Beyond academic readiness, we focus on character development, emphasizing values such as empathy, kindness, and respect. By creating a supportive and inclusive environment, we empower our primary kids to become confident learners who positively impact their peers and community.
+					</p>
+				</div>
+			</div>
+			<div class="white half is-title title-2">
+				<!--<h1>Agassi<br> Primary School</h1>-->
+			</div>
+		</div>
+		<div class="bestway">
+			<div class="white half is-title title-3">
+				<!--<h1>Agassi <br> Junior High School</h1>-->
+			</div>
+			<div class="brown half">
+				<div>
+					<h3>Junior High School</h3>
+					<p>
+						In the High School stream, we aim to foster a sense of responsibility and social consciousness. Our students are encouraged to apply their knowledge and skills to make a positive impact on their school community and beyond. Through service-learning projects, leadership opportunities, and community outreach, we empower our High school students to become compassionate, globally aware citizens who contribute meaningfully to the world around them.
+					</p>
+				</div>	
+			</div>
+		</div>
+	</section>
+	<section class="to-admission-in-progress-bar">
+    
+        <h1 class="admission-text ">Admission In Progress</h1>
+         <button class="button">
+            <a class="ba" href="Admission.html"></a> Enroll Now </a>
+         </button>
+    </section>
+
+    <!--<h1 class="at">ACADEMIC PROGRAMMES</h1>
     <div id="reviewCarousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner inner">
             <div class="carousel-item  specific-carousel-item active">
@@ -223,7 +450,7 @@
             </div>
             <div class="carousel-item specific-carousel-item">
                 <div class="review-card">
-                    <img src="./Images/LOGO.jpeg" alt="User Photo" class="carousel-img">
+                    <img src="./Images/LOGO.png" alt="User Photo" class="carousel-img">
                     <h5>PRIMARY</h5>
                     <p>General Manager</p>
                     
@@ -254,7 +481,7 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
-    </div>
+    </div>-->
     <section class="nau">
         <a class="ba" href="News And Update.html">
         <h1 class="nau">NEWS,UPDATE & EVENTS</h1></a>
@@ -264,8 +491,7 @@
     <footer class="footer">
         <div class="footer-container">
           <div class="footer-column">
-            <img src="./Images/LOGO.jpeg" alt="Logo" class="footer-logo">
-            <p class="footer-email">info@yourwebsite.com</p>
+            <img src="./Images/LOGO.png" alt="Logo" class="footer-logo">
           </div>
           <div class="footer-column">
             <h3 class="footer-heading">Our Academics</h3>
@@ -289,6 +515,8 @@
               <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
               <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
               <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+			  <p class="footer-email">info@yourwebsite.com</p>
+
             </ul>
           </div>
         </div>
@@ -298,7 +526,7 @@
     <!-- <footer>
         <section class="fs">
             <div>
-                <img class="a-logo" src="./Images/LOGO.jpeg" alt="">
+                <img class="a-logo" src="./Images/LOGO.png" alt="">
                 <p class="email">agassi123@gmail.com</p>
             </div>
             <div class="d">
@@ -329,7 +557,7 @@
             </div>
         </section>
     </footer>    -->
-    <p class="copy-right">© 2023 Agassi Memorial School. All rights reserved.
+    <p class="copy-right">© 2023 Website Developed by Agassi Students. All rights reserved.
     </p> 
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>

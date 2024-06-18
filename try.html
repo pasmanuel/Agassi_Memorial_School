@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Switch</title>
+    <link rel="stylesheet" href="styles.css">
+	<style>
+		body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			margin: 0;
+			background-color: #f0f0f0;
+		}
+
+		.color-box {
+			width: 100px;
+			height: 100px;
+			margin: 10px;
+			transition: background-color 0.5s ease;
+		}
+
+		#div1 {
+			background-color: #3498db; /* Blue */
+		}
+
+		#div2 {
+			background-color: #e74c3c; /* Red */
+		}
+
+	</style>
+</head>
+<body>
+    <div id="div1" class="color-box"></div>
+    <div id="div2" class="color-box"></div>
+    <script>
+		document.addEventListener("DOMContentLoaded", function() {
+			const div1 = document.getElementById("div1");
+			const div2 = document.getElementById("div2");
+
+			setInterval(() => {
+				// Get the current background colors
+				const color1 = window.getComputedStyle(div1).backgroundColor;
+				const color2 = window.getComputedStyle(div2).backgroundColor;
+
+				// Swap the background colors
+				div1.style.backgroundColor = color2;
+				div2.style.backgroundColor = color1;
+			}, 2000); // Change colors every 2 seconds
+		});
+	</script>
+
+</body>
+</html>
