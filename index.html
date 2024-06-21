@@ -168,7 +168,13 @@
             </div>
         </div>
     </section> -->
-          
+    <style>
+		@media screen and (max-width:868px){
+			.msg{
+				display:block;
+			}
+		}
+	</style>
     <section class="welcome">
         <div class="msg">
             <div class="wel-msg-main">
@@ -233,6 +239,22 @@
 		.is-title{
 			text-transform:uppercase;
 		}
+		
+		@media screen and (max-width:868px){
+			.holders{
+				display:block;
+			}
+			
+			.is-holder{
+				width:80%;
+				margin:50px auto;
+			}
+			
+			.round{
+				width:300px;
+				height:300px;
+			}
+		}
 	</style>
 	<section style=" background-color:#5d0b06; padding:50px 0; ">
 		<div class="holders">
@@ -296,6 +318,10 @@
 			text-align:center;
 		}
 		
+		.is-hide{
+			display:none !important;
+		}
+		
 		.bestway{
 			display:flex;
 		}
@@ -303,15 +329,21 @@
 			display:flex;
 			justify-content:center;
 			align-items:center;
-			color:##5d0b06;
+			color:#5d0b06;
 		}
 		
 		.half h3{
 			display:none;
 		}
 		
+		.half h1{
+			background-color:rgba(254, 214, 0, 0.5);
+			padding:20px;
+			color:;
+		}
+		
 		.title-1{
-			background-image:url('./Images/primary.jpg');
+			background-image:url('./Images/award1.jpg');
 			background-size:cover;
 			background-position:top;
 		}
@@ -327,7 +359,25 @@
 			background-size:cover;
 			background-position:center;
 		}
-	</style>
+		
+		@media screen and (max-width:868px){
+			.bestway{
+				display:block;
+			}
+			
+			.half{
+				width:100%;
+			}
+			
+			.is-hide{
+				display:block !important;
+			}
+			
+			.is-show{
+				display:none;
+			}
+		}
+		</style>
 	<!--<script>
 		document.addEventListener("DOMContentLoaded", function() {
 			const colorBoxes = document.querySelectorAll('.half');
@@ -393,7 +443,7 @@
 	<section style=" width:90%; margin:100px auto;">
 		<div class="bestway">
 			<div class="white half is-title title-1">
-				<!--<h1>Agassi<br> Preschool</h1>-->
+				<h1>Agassi<br> Preschool</h1>
 				
 			</div>
 			<div class="brown half">
@@ -406,6 +456,9 @@
 			</div>
 		</div>
 		<div class="bestway">
+			<div class="white half is-title title-2 is-hide">
+				<h1>Agassi<br> Primary School</h1>
+			</div>
 			<div class="brown half">
 				<div>
 					<h3>Primary School</h3>
@@ -414,13 +467,13 @@
 					</p>
 				</div>
 			</div>
-			<div class="white half is-title title-2">
-				<!--<h1>Agassi<br> Primary School</h1>-->
+			<div class="white half is-title title-2 is-show">
+				<h1>Agassi<br> Primary School</h1>
 			</div>
 		</div>
 		<div class="bestway">
 			<div class="white half is-title title-3">
-				<!--<h1>Agassi <br> Junior High School</h1>-->
+				<h1>Agassi <br> Junior High School</h1>
 			</div>
 			<div class="brown half">
 				<div>
@@ -494,12 +547,16 @@
 		.news-item{
 			width:30%;
 			background-color:#5d0b06;
+			
 		}
 		
 		.news-item img{
 			height:250px;
 			width:100%;
 			background-color:white;
+			object-size:cover;
+			
+			
 		}
 		
 		.news-item p{
@@ -581,13 +638,23 @@
 		  transition: 0s;
 		  transform: translate(0, 5%);
 		}
+		@media screen and (max-width:868px){
+			.is-news{
+				display:block;
+			}
+			
+			.news-item{
+				width:80%;
+				margin:50px auto;
+			}
+		}
 	</style>
     <section class="nau">
         <a class="ba" href="News And Update.html">
         <h1 class="nau">NEWS,UPDATE & EVENTS</h1></a>
 		<div class="is-news">
 			<div class="news-item">
-				<img src="" alt="">
+				<img src="./Images/Madam-Esther.jpg" alt="">
 				<h4>News Item 1</h4>
 				<p>
 					Aliquam ac justo finibus, porta justo nec, vehicula justo. Quisque in bibendum nunc, vel iaculis ante. Duis laoreet ex ac pretium hendrerit. Nam non mauris sit amet magna eleifend mattis. Suspendisse aliquet justo augue, scelerisque venenatis magna elementum eu. Phasellus blandit eros erat, id vestibulum quam egestas eu. Pellentesque sed metus eget ex fermentum varius at eget ex. Etiam faucibus nisl in metus aliquet, sit amet imperdiet risus auctor
@@ -595,7 +662,7 @@
 				<button>Read More</button>
 			</div>
 			<div class="news-item">
-				<img src="" alt="">
+				<img src="./Images/trip.jpg" alt="">
 				<h4>News Item 1</h4>
 				<p>
 					Aliquam ac justo finibus, porta justo nec, vehicula justo. Quisque in bibendum nunc, vel iaculis ante. Duis laoreet ex ac pretium hendrerit. Nam non mauris sit amet magna eleifend mattis. Suspendisse aliquet justo augue, scelerisque venenatis magna elementum eu. Phasellus blandit eros erat, id vestibulum quam egestas eu. Pellentesque sed metus eget ex fermentum varius at eget ex. Etiam faucibus nisl in metus aliquet, sit amet imperdiet risus auctor
@@ -603,7 +670,7 @@
 				<button>Read More</button>
 			</div>
 			<div class="news-item">
-				<img src="" alt="">
+				<img src="./Images/quiz-1.jpg" alt="">
 				<h4>News Item 1</h4>
 				<p>
 					Aliquam ac justo finibus, porta justo nec, vehicula justo. Quisque in bibendum nunc, vel iaculis ante. Duis laoreet ex ac pretium hendrerit. Nam non mauris sit amet magna eleifend mattis. Suspendisse aliquet justo augue, scelerisque venenatis magna elementum eu. Phasellus blandit eros erat, id vestibulum quam egestas eu. Pellentesque sed metus eget ex fermentum varius at eget ex. Etiam faucibus nisl in metus aliquet, sit amet imperdiet risus auctor

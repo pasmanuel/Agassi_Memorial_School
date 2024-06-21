@@ -248,9 +248,13 @@
     margin-top: 0px;
 }
 
+.carousel-item{
+	height:100vh;
+}
+
 .carousel-item img {
     width: 100%; /* Adjust as needed */
-	height:90vh;
+	height:90vh !important;
     object-fit: cover; /* Ensure the image covers the entire area */
 	object-position:top;
   }
@@ -385,7 +389,7 @@
 }
 
 .logo {
-    max-width: 40px; /* Set max width for the logo */
+    max-width: 60px; /* Set max width for the logo */
     height: auto; /* Maintain aspect ratio */
   }
 
@@ -920,7 +924,7 @@ input{
      
 }
 .navbar-br {
-    font-size: 15px;
+    font-size: 30px;
 }
 
 }
@@ -932,7 +936,7 @@ input{
 .to-admission-in-progress-bar{
     margin-top: 1rem;
     display: block;
-    background-color: green;
+    background-color: #5d0b06;
     height: 100px;
     width: 100%; 
 }
@@ -978,24 +982,25 @@ input{
         grid-template-columns: repeat(auto-fit,minmax(270px, 1fr));
         gap: 30px;
         padding-left: 1rem;
-        background-color: rgba(20, 14, 14, 0.4);
+		color:#5d0b06;
+        //background-color: rgba(20, 14, 14, 0.4);
     
         
     }
 
     .wel-msg{
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 1.2rem;
+        font-size: 3.2rem;
         font-weight: 800;
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
-        color:#5d0b06;
+        
     }  
     
     
  .dir-img{
         margin-top: 1rem;
-        height:380px; 
+        //height:380px; 
        width: 100%; 
 		
 
@@ -1004,8 +1009,8 @@ input{
 
 
     .wel-msg-main p{
-        color: white;
-        font-size: 15px;
+		color:#5d0b06;
+        font-size: 30px;
         line-height: 2rem;
         padding: 0 1rem;
     }
