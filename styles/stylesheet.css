@@ -517,6 +517,8 @@ a:hover{
     width: 400px; 
     /* clip-path: polygon(50% 00%, 100% 50%, 50% 100%,0% 50%); */
     object-fit: cover;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 1rem;
 } 
 
 .img-dir{
@@ -811,6 +813,40 @@ input{
   .carousel-fade .carousel-item.active.carousel-item-right {
     opacity: 1;
   }
+/* To admission process page */
+.admission-process-bg{
+    background-image: url("/Images/cytonn-photography-GJao3ZTX9gU-unsplash.jpg");
+    height: 70vh;
+    background-size: cover;
+    /* background-position: center; */
+}
+
+.admission-process {
+  padding: 2rem;
+  max-width: 85%;
+  line-height: 1.6;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+
+/* TO fees policy page */
+.admission-fees-policy-bg{
+  background-image: url("/Images/checkout-4762569_1280.jpg");
+  height: 70vh;
+  background-size: cover;
+  /* background-position: center; */
+}
+
+/* TO fees uniform and books page */
+.admission-uniform-books-bg{
+  background-image: url("/Images/gr-stocks-1ytUKz_Ms8U-unsplash.jpg");
+  height: 70vh;
+  background-size: cover;
+  /* background-position: center; */
+}
+
 
 
 
@@ -899,11 +935,11 @@ input{
     
  .dir-img{
         margin-top: 1rem;
-        height:380px; 
+        height:90vh; 
        width: 100%; 
 		
 
-        /* clip-path: polygon(50% 00%, 100% 50%, 50% 100%,% 50%); */
+        /
     } 
 
 
@@ -917,14 +953,12 @@ input{
        
 }
 
-.img-holder{
-	/* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
-	/* border:2px solid red; */
-}
 
-.dir-img{
+
+/* .dir-img{
+
 	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-}
+} */
    
 .academic-sub  {
     display: flex;
