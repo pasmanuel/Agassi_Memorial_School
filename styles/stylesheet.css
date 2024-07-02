@@ -597,7 +597,7 @@ a:hover{
 .mission{
     background-color: yellow;
     /* max-width: 25%; */
-    height: 17rem;
+   // height: 17rem;
     padding: 2rem;
     border-radius: 10px;
     cursor: pointer;
@@ -607,7 +607,7 @@ a:hover{
     /* max-width: 25%; */
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 2rem;
-    height: 17rem;
+   // height: 17rem;
     border-radius: 10px;
     cursor: pointer;
 }
