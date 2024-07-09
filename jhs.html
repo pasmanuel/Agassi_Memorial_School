@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/stylesheet.css">
-    <title>Home - Agassi Memorial School</title>
+    <title>JHS | Agassi Memorial School</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
@@ -48,16 +48,16 @@
                             <a class="nav-link active text-dark" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  text-dark" href="About us.html">About Us</a>
+                            <a class="nav-link  text-dark" href="about-us.html">About Us</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Academics
                         </a>
                         <ul class="dropdown-menu  bg-success dropdown-menu-dark">
-                            <li><a class="dropdown-item" href="#">PreSchool</a></li>
-                            <li><a class="dropdown-item" href="#">Primary</a></li>
-                            <li><a class="dropdown-item" href="#">JHS</a></li>
+                            <li><a class="dropdown-item" href="preschool.html">PreSchool</a></li>
+                            <li><a class="dropdown-item" href="primary.html">Primary</a></li>
+                            <li><a class="dropdown-item" href="jhs.html">JHS</a></li>
                         </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -65,7 +65,7 @@
                                 Admissions
                             </a>
                             <ul class="dropdown-menu bg-success" aria-labelledby="navbarDropdown2">
-                                <li><a class="dropdown-item"  href="Admission.html">Admission Process</a></li>
+                                <li><a class="dropdown-item"  href="admission.html">Admission Process</a></li>
                                 <li><a class="dropdown-item" href="#">Fees Policy</a></li>
                             </ul>
                         </li>
@@ -74,8 +74,8 @@
                                 Media
                             </a>
                             <ul class="dropdown-menu bg-success" aria-labelledby="navbarDropdown3">
-                                <li><a class="dropdown-item " href="#">Video Gallery</a></li>
-                                <li><a class="dropdown-item" href="#">Photo Gallery</a></li>
+                                <li><a class="dropdown-item " href="gallery.html">Video Gallery</a></li>
+                                <li><a class="dropdown-item" href="gallery.html">Photo Gallery</a></li>
                             </ul>
                         </li>
                         <li class="nav-item me-6 ">
@@ -87,14 +87,19 @@
             </div>
         </nav>
     </section>
+	<style>
+		.carousel-item img{
+			object-position:top;
+		}
+	</style>
 	<section class="carousel-scroll">
         <div id="carouselExampleInterval" class="carousel slide"  data-bs-ride="carousel">
             
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="./images/AGASSI STAFF.JPG " loading="lazy" class="d-block w-100" alt="...">
+                  <img src="./images/jhs-hero.jpg " loading="lazy" class="d-block w-100" alt="...">
                   <div class="carousel-caption">
-                    <h2>Academics</h2>
+                    <h2>Junior High School</h2>
                     <h3></h3>
                     <!-- <p>Some  placeholder content for the first slide.</p> -->
                   </div>
@@ -105,78 +110,14 @@
     </section>
     </header>
     <hr>
-    <!--
-	<h1 class="at">ACADEMIC PROGRAMME</h1>
-    <section class="alt"> 
-        <div class="ab">
-            <img class="ab-img" src="./Images/LOGO.jpeg" alt="PRE-SCHOOL">
-            <h1>PRE-SCHOOL</h1>
-            <div class="ab-p">
-                <p>
-                    Agassi Memorial School Montessori program focuses on leveraging innate childhood traits to develop a child's full potential.
-                </p>
-                <p>
-                    These traits include curiosity, creativity, self-discovery, the need for order, and the desire to respond to sensorial input. 
-                </p>
-                <p>
-                    Our prime role is that the journey of our children is planned meticulously in order to provide an excellent foundation to foster positive attitude towards learners..
-                </p>
-                <p>
-                    At Agassi our education is child-centered, with curriculum developed around the needs and abilities of the children.
-                </p>
-            </div>
-        </div>
-        <div class="ab">
-            <img class="ab-img" src="./Images/LOGO.jpeg" alt="PRIMARY">
-            <h1>PRIMARY</h1>
-            <div class="ab-p">
-                <p>
-                    Our Primary level of education consists of classes from Basic Stage (B.S.) 1 to 6 and a class size of thirty (30). 
-                </p>
-                <p>
-    
-               
-            </div>
-        </div>
-        <div class="ab">
-            <img class="ab-img" src="./Images/Jhs.jpg" alt="JUNIOR HIGH SCHOOL">
-            <h1>JUNIOR HIGH SCHOOL</h1>
-            <p>
-                The Junior High School is a three-year program that prepares students for the Basic Education Certificate Examination (BECE) leading to the West African Senior School Certificate Examination (WASSCE).
-            </p>
-            <br>
-            <p class="sub-expo">The subjects offered for the course are:</p>
-                <ul>
-                    <li>English Language</li>
-                    <li>Social Studies</li>
-                    <li>Mathematics</li>
-                    <li>Integrated Science</li>
-                    <li>Computing / ICT</li>
-                    <li>Ghanaian Language (Twi)</li>
-                    <li>French</li>
-                    <li>Computer Programing</li>
-                </ul>
-                <br>
-            <p>The JHS department has highly competent graduate professional teachers handling these subjects.</p>
-        </div>
-        <div class="ab">
-            <img class="ab-img" src="./Images/Smart 2.jpg" alt="SMARTRIBE">
-            <h1>SMARTRIBE</h1>
-            <div class="ab-p">
-                <p>
-                    The Smartribe program features Computer programming, Robotics, Abacus, and Verdic Maths.
-                </p>
-            </div>
-        </div>
-    </section>-->
 	<section class="welcome">
         <div class="msg">
             <div class="col img-holder">
-                <img class="dir-img" src="/Images/About-img.jpg" alt="Directors-Image">
+                <img class="dir-img" src="./Images/About-img.jpg" alt="Directors-Image">
             </div>
             <div class="wel-msg-main">
                 <h1 class="wel-msg">
-                     Our Preschool
+                     AGASSI JUNIOR HIGH
                 </h1>
                 <p>
                     Agassi Memorial School offers a nurturing environment where preschoolers can grow, learn, and thrive. Our Montessori-inspired preschool program is designed to leverage the natural traits of childhood, such as curiosity and creativity, to develop each child's full potential. We understand the importance of self-discovery and the need for order in a child's life, and we tailor our curriculum to meet the individual needs and abilities of every student. Our experienced staff is dedicated to guiding children through their early educational journey, fostering positive attitudes towards learning and helping them build a solid foundation for the future.
@@ -188,17 +129,70 @@
         <div class="msg">
             <div class="wel-msg-main">
                 <h1 class="wel-msg">
-                    Our Preschool Programs
+                    Our High School Programs
                 </h1>
                 <p>
                     At Agassi Memorial School, our preschool program prepares children for kindergarten with a focus on early literacy, math, and social skills. We provide a variety of activities that cater to the developmental stages of young children, including creative arts and crafts, interactive science experiments, and play-based learning. Each program is carefully crafted to meet the needs and abilities of our preschoolers, ensuring they receive a well-rounded and enriching educational experience. Our goal is to create a stimulating and supportive environment where children can explore, discover, and develop their unique talents and abilities.
                 </p>
             </div>
             <div class="col img-holder">
-                <img class="dir-img" src="/Images/About-img.jpg" alt="Directors-Image">
+                <img class="dir-img" src="./Images/About-img.jpg" alt="Directors-Image">
             </div>
         </div>
     </section> 
+	<style>
+		.parallax {
+			/* The image used */
+			background-image: url("./Images/graduation-8.jpg");
+
+			/* Set a specific height */
+			min-height: 300px;
+
+			/* Create the parallax scrolling effect */
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			
+			/* Centering content */
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			color: white;
+			text-align: center;
+		}
+
+		.info {
+			background: rgba(0, 0, 0, 0.5); /* Optional: To make text more readable */
+			padding: 20px;
+			//border-radius: 10px;
+			color:whitesmoke;
+			font-size:30px;
+			width:50%;
+		}
+		
+		.info a{
+			text-decoration:none;
+			color:whitesmoke;
+			border:3px solid white;
+			padding:5px;
+			margin-block:5px;	
+		}
+		
+		.info a:hover{
+			background-color:whitesmoke;
+			color:black;
+		}
+	</style>
+	<section class="to-next-page">
+		<div class="parallax">
+			<div class="info">
+				<h2>Want to know more?</h2>
+				<a href="academics.html">Visit Academics</a>
+			</div>
+		</div>
+	</section>
     <footer class="footer">
         <div class="footer-container">
 			<div class="footer-column">

@@ -281,18 +281,26 @@
     opacity: 0;
     animation-fill-mode: forwards; /* Ensure the final animation state 
 	persists */
-	background-color:rgba(255,255,255,0.5);
+	//background-color:rgba(255,255,255,0.5);
 	
   }
   
   .carousel-caption h2{
-	color:darkgreen;
-	font-size:50px;
+	color:whitesmoke;
+	font-size:80px;
 	font-weight:600;
+	text-shadow: 2px 2px 2px #5d0b06;
+	//text-transform:uppercase;
   }
   
   .carousel-caption p{
 	color:#5d0b06;
+	background-color:gold;
+	display:none;
+	padding:10px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	border-radius:5px;
+	font-size:large;
   }
 
   /* Define different animations for each caption */
