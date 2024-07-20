@@ -109,16 +109,88 @@
     </section>
     </header>
 	
+	<section class="welcome">
+        <div class="msg">
+            <div class="col img-holder">
+                <img class="dir-img" src="/Images/About-img.jpg" alt="Directors-Image">
+            </div>
+            <div class="wel-msg-main">
+                <h1 class="wel-msg">
+                    MORDERN INFORMATION TECHNOLOGY LABORATORY
+                </h1>
+                <p>
+                    Agassi Memorial School offers a nurturing environment where preschoolers can grow, learn, and thrive. Our Montessori-inspired preschool program is designed to leverage the natural traits of childhood, such as curiosity and creativity, to develop each child's full potential. We understand the importance of self-discovery and the need for order in a child's life, and we tailor our curriculum to meet the individual needs and abilities of every student. Our experienced staff is dedicated to guiding children through their early educational journey, fostering positive attitudes towards learning and helping them build a solid foundation for the future.
+                </p>
+            </div>
+        </div>
+    </section> 
+    <section class="welcome">
+        <div class="msg">
+            <div class="wel-msg-main">
+                <h1 class="wel-msg">
+                    FACILITY 2
+                </h1>
+                <p>
+                    At Agassi Memorial School, our preschool program prepares children for kindergarten with a focus on early literacy, math, and social skills. We provide a variety of activities that cater to the developmental stages of young children, including creative arts and crafts, interactive science experiments, and play-based learning. Each program is carefully crafted to meet the needs and abilities of our preschoolers, ensuring they receive a well-rounded and enriching educational experience. Our goal is to create a stimulating and supportive environment where children can explore, discover, and develop their unique talents and abilities.
+                </p>
+            </div>
+            <div class="col img-holder">
+                <img class="dir-img" src="/Images/About-img.jpg" alt="Directors-Image">
+            </div>
+        </div>
+    </section> 
 	<style>
-		.facilities-main{
-			height:100vh;
-			text-align:center;
+		.parallax {
+			/* The image used */
+			background-image: url("./Images/agassi-building.jpg");
+
+			/* Set a specific height */
+			min-height: 300px;
+
+			/* Create the parallax scrolling effect */
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			
+			/* Centering content */
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			color: white;
+			text-align: center;
+		}
+
+		.info {
+			background: rgba(0, 0, 0, 0.5); /* Optional: To make text more readable */
+			padding: 20px;
+			//border-radius: 10px;
+			color:whitesmoke;
+			font-size:30px;
+			width:50%;
+		}
+		
+		.info a{
+			text-decoration:none;
+			color:whitesmoke;
+			border:3px solid white;
+			padding:5px;
+			margin-block:5px;	
+		}
+		
+		.info a:hover{
+			background-color:whitesmoke;
+			color:black;
 		}
 	</style>
-	<section class="facilities-main">
-		<h1>
-			Page Under Construction
-		</h1>
+	<section class="to-next-page">
+		<div class="parallax">
+			<div class="info">
+				<h2>Want to know more?</h2>
+				<a href="academics.html">Visit Academics</a>
+			</div>
+		</div>
 	</section>
 	
 
