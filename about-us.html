@@ -42,17 +42,21 @@
 								<li class="nav-item">
 									<a class="nav-link active text-dark" aria-current="page" href="index.html">Home</a>
 								</li>
-								<li class="nav-item">
-									<a class="nav-link  text-dark" href="about-us.html">About Us</a>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle  text-dark" href="about-us.html">About Us</a>
+									<ul class="dropdown-menu  bg-success dropdown-menu-dark">
+										<li><a class="dropdown-item" href="our-team.html">Our Team</a></li>
+										<li><a class="dropdown-item" href="our-facilities.html">Our Facilities</a></li>
+									</ul>
 								</li>
 								<li class="nav-item dropdown">
 									<a class="nav-link dropdown-toggle text-dark" href="academics.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 										Academics
 									</a>
 									<ul class="dropdown-menu  bg-success dropdown-menu-dark">
-										<li><a class="dropdown-item" href="academics.html">PreSchool</a></li>
-										<li><a class="dropdown-item" href="academics.html">Primary</a></li>
-										<li><a class="dropdown-item" href="academics.html">JHS</a></li>
+										<li><a class="dropdown-item" href="preschool.html">PreSchool</a></li>
+										<li><a class="dropdown-item" href="primary.html">Primary</a></li>
+										<li><a class="dropdown-item" href="jhs.html">JHS</a></li>
 									</ul>
 								</li>
 								<li class="nav-item dropdown">
@@ -60,8 +64,12 @@
 										Admissions
 									</a>
 									<ul class="dropdown-menu bg-success" aria-labelledby="navbarDropdown2">
-										<li><a class="dropdown-item"  href="Admission.html">Admission Process</a></li>
-										<li><a class="dropdown-item" href="#">Fees Policy</a></li>
+										<li>
+											<a class="dropdown-item"  href="Admission.html">Admission Process</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="fees-policy.html">Fees Policy</a>
+										</li>
 									</ul>
 								</li>
 								<li class="nav-item dropdown">
@@ -69,8 +77,12 @@
 										Media
 									</a>
 									<ul class="dropdown-menu bg-success" aria-labelledby="navbarDropdown3">
-										<li><a class="dropdown-item " href="gallery.html">Video Gallery</a></li>
-										<li><a class="dropdown-item" href="gallery.html">Photo Gallery</a></li>
+										<li>
+											<a class="dropdown-item " href="gallery.html">Video Gallery</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="gallery.html">Photo Gallery</a>
+										</li>
 									</ul>
 								</li>
 								<li class="nav-item me-6 ">
@@ -82,11 +94,13 @@
 				</div>
 			</nav>
 		</section>
+		<!-- to carousel-->
+		<section>
 		<section class="carousel-scroll">
 			<div id="carouselExampleInterval" class="carousel slide"  data-bs-ride="carousel">
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<img src="./images/graduation-34.jpg " loading="lazy" class="d-block w-100" alt="..." width="100%">
+						<img src="./Images/graduation-34.jpg " loading="lazy" class="d-block w-100" alt="..." width="100%">
 						<div class="carousel-caption">
 							<h2>About Us</h2>
 							<h3></h3>
@@ -116,26 +130,22 @@
 				</p>
             </div>
 			<style>
-				.centered{
-					display:flex;
-					align-items:center;
-					justify-content:center;
-					//height:100%;
-					//border:2px solid red;
-				}
 				
-				.image-holder{
-					width:550px;
-					height:550px;
-					border-radius:50%;
-					border:2px solid red;
-				}
 			</style>
-            <div class="col centered">
-                <div class="image-holder">
-					
+			
+			<div class="col">
+				<div class="centered">
+					<div class="image-holder directors-image">
+						
+					</div>
 				</div>
-            </div>
+				<div class="centered">
+					<div>
+						<h5>Name</h5>
+						<span>Chief Executive Officer<span>
+					</div>
+				</div>
+			<div>
         </div>
     </section> 
 	
@@ -148,6 +158,12 @@
 		</section>
 	
 	<style>
+		.directors-image{
+			background-image:url("./Images/director-image-1.jpg");
+			background-size:cover;
+			background-position:center;
+		}
+	
 		.carousel-item img{
 			object-position:center;
 		}
@@ -171,8 +187,24 @@
 		}
 		
 		.mission-vision h3{
-			color:#5d0b06;
+			color:#006a3e;
 			font-size:3rem;
+		}
+		
+		@media(max-width:786px){
+			.core-missions-list{
+				display:block;
+			}
+			
+			.mission-vision{
+				height:100%;
+			}
+			
+			.vision,
+			.mission{
+				width:80%;
+				margin:20px auto;
+			}
 		}
 	</style>
     <section class="mission-vision">
@@ -214,50 +246,102 @@
                 
             </div>
     </section>
-		<footer class="footer">
-			<div class="footer-container">
-				<div class="footer-column">
-				<img src="./Images/LOGO.png" alt="Logo" class="footer-logo">
-			</div>
-			<div class="footer-column">
-				<h3 class="footer-heading">Our Academics</h3>
-				<ul class="footer-links">
-				  <li><a href="#">Preschool</a></li>
-				  <li><a href="#">Primary School</a></li>
-				  <li><a href="#">Junior High School</a></li>
-				  <li><a href="#">Smart Tribe</a></li>
-				</ul>
-			</div>
-			<div class="footer-column">
-				<h3 class="footer-heading">Admissions</h3>
-				<ul class="footer-links">
-				  <li><a href="#">Admissions</a></li>
-				  <li><a href="#">Contact Us</a></li>
-				</ul>
-			</div>
-			<div class="footer-column">
-				<h3 class="footer-heading">Social Media</h3>
-				<ul class="footer-social">
-					<li>
-						<a href="#">
-							<i class="fab fa-facebook-f"></i> Facebook
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fab fa-twitter"></i> Twitter
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fab fa-instagram"></i> Instagram
-						</a>
-					</li>
-					<p class="footer-email">info@yourwebsite.com</p>
+	<style>
+		.parallax {
+			/* The image used */
+			background-image: url("./Images/agassi-building.jpg");
 
-				</ul>
+			/* Set a specific height */
+			min-height: 300px;
+
+			/* Create the parallax scrolling effect */
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			
+			/* Centering content */
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			color: white;
+			text-align: center;
+		}
+
+		.info {
+			background: rgba(0, 0, 0, 0.5); /* Optional: To make text more readable */
+			padding: 20px;
+			//border-radius: 10px;
+			color:whitesmoke;
+			font-size:30px;
+			width:50%;
+		}
+		
+		.info a{
+			text-decoration:none;
+			color:whitesmoke;
+			border:3px solid white;
+			padding:5px;
+			margin-block:5px;	
+		}
+		
+		.info a:hover{
+			background-color:whitesmoke;
+			color:black;
+		}
+	</style>
+	<section class="to-next-page">
+		<div class="parallax">
+			<div class="info">
+				<h2>Want to know more?</h2>
+				<a href="admission.html">View Admission Process</a>
 			</div>
-		</footer>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="footer-container">
+			<div class="footer-column">
+			<img src="./Images/LOGO.png" alt="Logo" class="footer-logo">
+		</div>
+		<div class="footer-column">
+			<h3 class="footer-heading">Our Academics</h3>
+			<ul class="footer-links">
+			  <li><a href="preschool.html">Preschool</a></li>
+			  <li><a href="primary.html">Primary School</a></li>
+			  <li><a href="jhs.html">Junior High School</a></li>
+			  <li><a href="https://thesmartribe.com" target="_blank">Smart Tribe</a></li>
+			</ul>
+		</div>
+		<div class="footer-column">
+			<h3 class="footer-heading">Admissions</h3>
+			<ul class="footer-links">
+			  <li><a href="admission.html">Admissions</a></li>
+			  <li><a href="contacts.html">Contact Us</a></li>
+			</ul>
+		</div>
+		<div class="footer-column">
+			<h3 class="footer-heading">Social Media</h3>
+			<ul class="footer-social">
+				<li>
+					<a href="#">
+						<i class="fab fa-facebook-f"></i> Facebook
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fab fa-twitter"></i> Twitter
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fab fa-instagram"></i> Instagram
+					</a>
+				</li>
+
+			</ul>
+		</div>
+	</footer>
 		<p class="copy-right">
 			© 2023 Website Developed by Agassi Students. Empowered by <a href="https://thesmartribe.com">thesmartribe.com</a>.
 		</p> 
