@@ -966,6 +966,12 @@ input{
     width: 100%; 
 }
 
+@media screen and (max-width:868px){
+				.msg{
+					display:block;
+				}
+			}
+
 .navbar-br {
     font-size: 20px;
 }
@@ -981,6 +987,56 @@ input{
 	font-size:40px;
 }
 
+.round{
+				width:200px;
+				height:200px;
+				border-radius:50%;
+				border:2px solid #fff;
+				margin:0 auto;
+				//background-color:#fff;
+			}
+			
+			.round img{
+				width:80%;
+				margin:10px auto;
+			}
+			
+			.holders{
+				display:flex;
+				justify-content:space-around;
+			}
+			.s-text{
+				text-align:center;
+				color:#fff;
+			}
+			
+			.s-text h3{
+				margin:0;
+			}
+			
+			.is-holder{
+				width:20%;
+			}
+			
+			.is-title{
+				text-transform:uppercase;
+			}
+			
+			@media screen and (max-width:868px){
+				.holders{
+					display:block;
+				}
+				
+				.is-holder{
+					width:80%;
+					margin:50px auto;
+				}
+				
+				.round{
+					width:300px;
+					height:300px;
+				}
+			}
 
 .button{
     cursor: pointer;

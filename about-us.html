@@ -11,6 +11,153 @@
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 		<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<link rel="icon" type="image/x-icon" href="./Images/logo.ico">
+
+		<style>
+		.parallax {		
+			background-image: url("./Images/graduation-8.jpg");
+			min-height: 300px;
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			color: white;
+			text-align: center;
+		}
+
+		.info {
+			background: rgba(0, 0, 0, 0.5); /* Optional: To make text more readable */
+			padding: 20px;
+			//border-radius: 10px;
+			color:whitesmoke;
+			font-size:30px;
+			width:50%;
+		}
+		
+		.info a{
+			text-decoration:none;
+			color:whitesmoke;
+			padding:5px;
+			margin-block:5px;	
+		}
+		
+		.info a div{
+			border:3px solid white;
+		}
+		
+		.info a:hover{
+			background-color:whitesmoke;
+			color:black;
+		}
+		
+		.directors-image{
+			background-image:url("./Images/director-image-1.jpg");
+			background-size:cover;
+			background-position:center;
+		}
+	
+		.carousel-item img{
+			object-position:center;
+		}
+		
+		.mission-vision{
+			margin-block:50px;
+			text-align:center;
+			height:80vh;
+		}
+		
+		.core-missions-list{
+			display:flex;
+			justify-content:space-around;
+		}
+		
+		.vision,
+		.mission{
+			width:40%;
+			background-color:#006a3e;
+			color:whitesmoke;
+		}
+		
+		.mission-vision h3{
+			color:#006a3e;
+			font-size:3rem;
+		}
+		
+		@media(max-width:786px){
+			.core-missions-list{
+				display:block;
+			}
+			
+			.mission-vision{
+				height:100%;
+			}
+			
+			.vision,
+			.mission{
+				width:80%;
+				margin:20px auto;
+			}
+			
+			.msg{
+				display:block;
+			}
+		}
+		.round{
+				width:200px;
+				height:200px;
+				border-radius:50%;
+				border:2px solid #fff;
+				margin:0 auto;
+				//background-color:#fff;
+			}
+			
+			.round img{
+				width:80%;
+				margin:10px auto;
+			}
+			
+			.holders{
+				display:flex;
+				justify-content:space-around;
+			}
+			.s-text{
+				text-align:center;
+				color:#fff;
+			}
+			
+			.s-text h3{
+				margin:0;
+			}
+			
+			.is-holder{
+				width:20%;
+			}
+			
+			.is-title{
+				text-transform:uppercase;
+			}
+			
+			@media screen and (max-width:868px){
+				.holders{
+					display:block;
+				}
+				
+				.is-holder{
+					width:80%;
+					margin:50px auto;
+				}
+				
+				.round{
+					width:300px;
+					height:300px;
+				}
+			}
+		
+	</style>
 
 	</head>
 	<body>
@@ -120,7 +267,7 @@
 		</section>
 		<section class="welcome">
         <div class="msg">
-            <div class="wel-msg-main">
+            <div class="wel-msg-main" data-aos="fade-up">
                 <h1 class="wel-msg">
                      DIRECTOR'S MESSAGE
                 </h1>
@@ -135,14 +282,10 @@
 				</p>
             </div>
 			<style>
-				@media(max-width:786px){
-					.msg{
-						display:block;
-					}
-				}
+				
 			</style>
 			
-			<div class="col">
+			<div class="col" data-os="fade-down">
 				<div class="centered">
 					<div class="image-holder directors-image">
 						
@@ -160,7 +303,7 @@
 	
 	
 	
-	<section class="to-admission-in-progress-bar">
+	<section class="to-admission-in-progress-bar" data-aos="fade-up">
 		
 			<h1 class="admission-text ">Admission In Progress</h1>
 			 <button class="button">
@@ -168,62 +311,13 @@
 			 </button>
 		</section>
 	
-	<style>
-		.directors-image{
-			background-image:url("./Images/director-image-1.jpg");
-			background-size:cover;
-			background-position:center;
-		}
-	
-		.carousel-item img{
-			object-position:center;
-		}
-		
-		.mission-vision{
-			margin-block:50px;
-			text-align:center;
-			height:80vh;
-		}
-		
-		.core-missions-list{
-			display:flex;
-			justify-content:space-around;
-		}
-		
-		.vision,
-		.mission{
-			width:40%;
-			background-color:#006a3e;
-			color:whitesmoke;
-		}
-		
-		.mission-vision h3{
-			color:#006a3e;
-			font-size:3rem;
-		}
-		
-		@media(max-width:786px){
-			.core-missions-list{
-				display:block;
-			}
-			
-			.mission-vision{
-				height:100%;
-			}
-			
-			.vision,
-			.mission{
-				width:80%;
-				margin:20px auto;
-			}
-		}
-	</style>
-    <section class="mission-vision">
-            <div >
+
+    <section class="mission-vision" data-aos="fade-down">
+            <div data-aos="fade-up">
                 <h3>Our Mission & Vision</h3>
             </div>
             <div class="core-missions-list">
-                <div class="vision">
+                <div class="vision" data-aos="fade-right">
                     <div>
                         <h4>OUR MISSION</h4>
                         <hr class="hr-mission">
@@ -239,7 +333,7 @@
 
                     </p>
                 </div>
-                <div class="vision">
+                <div class="vision" data-aos="fade-left">
                     <div class="">
                         <div>
                             <h4>OUR VISION</h4>
@@ -258,58 +352,7 @@
             </div>
     </section>
 	
-	<style>
-			.round{
-				width:200px;
-				height:200px;
-				border-radius:50%;
-				border:2px solid #fff;
-				margin:0 auto;
-				//background-color:#fff;
-			}
-			
-			.round img{
-				width:80%;
-				margin:10px auto;
-			}
-			
-			.holders{
-				display:flex;
-				justify-content:space-around;
-			}
-			.s-text{
-				text-align:center;
-				color:#fff;
-			}
-			
-			.s-text h3{
-				margin:0;
-			}
-			
-			.is-holder{
-				width:20%;
-			}
-			
-			.is-title{
-				text-transform:uppercase;
-			}
-			
-			@media screen and (max-width:868px){
-				.holders{
-					display:block;
-				}
-				
-				.is-holder{
-					width:80%;
-					margin:50px auto;
-				}
-				
-				.round{
-					width:300px;
-					height:300px;
-				}
-			}
-		</style>
+
 		<section style=" background-color:#006a3e; padding:50px 0; text-align:center; color:whitesmoke;">
 			<div style="margin-block:30px;">
 				<h2>Our Core Values</h2>
@@ -356,56 +399,7 @@
 			</div>
 		</section>
 	
-	<style>
-		.parallax {
-			/* The image used */
-			background-image: url("./Images/graduation-8.jpg");
-
-			/* Set a specific height */
-			min-height: 300px;
-
-			/* Create the parallax scrolling effect */
-			background-attachment: fixed;
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: cover;
-			
-			/* Centering content */
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			flex-direction: column;
-			color: white;
-			text-align: center;
-		}
-
-		.info {
-			background: rgba(0, 0, 0, 0.5); /* Optional: To make text more readable */
-			padding: 20px;
-			//border-radius: 10px;
-			color:whitesmoke;
-			font-size:30px;
-			width:50%;
-		}
-		
-		.info a{
-			text-decoration:none;
-			color:whitesmoke;
-			padding:5px;
-			margin-block:5px;	
-		}
-		
-		.info a div{
-			border:3px solid white;
-		}
-		
-		.info a:hover{
-			background-color:whitesmoke;
-			color:black;
-		}
-		
-		
-	</style>
+	
 	<section class="to-next-page">
 		<div class="parallax">
 			<div class="info">

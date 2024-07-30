@@ -12,6 +12,193 @@
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 		<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<link rel="icon" type="image/x-icon" href="./Images/logo.ico">
+
+		<style>
+		.p-admissions-guide h1{
+			color:#006a3e;
+			text-shadow:1px 1px 2px #006a3e;
+			text-align:center;
+			margin:o;
+		}
+		
+		.p-admission-steps{
+			padding-bottom:30px;
+		}
+		
+		.is-p-admission-step{
+			background-color:#006a3e;
+			margin:10px;
+			color:whitesmoke;
+			border:4px solid #006a3e;
+			padding:10px;
+			border-radius:10px;
+			width:40%;
+		}
+		
+		.is-p-admission-step h4{
+			color:whitesmoke;
+			text-shadow:1px 1px 2px black;
+		}
+		
+		.is-step-1{	
+			margin-left:7%;
+		}
+		
+		.is-step-2{	
+			margin-left:30%;
+		}
+		
+		.is-step-3{	
+			margin-left:55%;
+		}
+		
+		.admissions-guide{
+			background-image:url('./Images/graduation-9.jpg');
+			background-size:cover;
+		}
+		
+		.admissions-guide h1{
+			color:whitesmoke;
+			text-shadow:1px 1px 2px black;
+			text-align:center;
+			margin:0;
+		}
+		
+		.admission-steps{
+			padding-bottom:30px;
+		}
+		
+		.is-admission-step{
+			background-color:whitesmoke;
+			margin:10px;
+			color:black;
+			border:4px solid #006a3e;
+			padding:10px;
+			border-radius:10px;
+			width:30%;
+		}
+		
+		.is-admission-step h4{
+			color:#006a3e;
+			text-shadow:1px 1px 2px black;
+		}
+		
+		.step-1{	
+			margin-left:3%;
+		}
+		
+		.step-2{	
+			margin-left:15%;
+		}
+		
+		.step-3{	
+			margin-left:35%;
+		}
+		
+		.step-4{	
+			margin-left:45%;
+		}
+		
+		.step-5{	
+			margin-left:55%;
+		}
+		
+		.step-6{	
+			margin-left:65%;
+		}
+		
+		@media (max-width: 786px) {
+			.admission-steps{
+				display:block;
+			}
+			
+			.is-admission-step{
+				width:80%;
+				margin:10px auto;
+			}
+			
+			.step-1,
+			.step-2,
+			.step-3,
+			.step-4,
+			.step-5,
+			.step-6{
+				margin:10px auto;
+			}
+		}
+		
+		@media (max-width: 786px) {
+			.admission-steps{
+				display:block;
+			}
+			
+			.is-admission-step,
+			.is-p-admission-step{
+				width:80%;
+				margin:10px auto;
+			}
+			
+			.is-step-1,
+			.is-step-2,
+			.is-step-3,
+			.step-1,
+			.step-2,
+			.step-3,
+			.step-4,
+			.step-5,
+			.step-6{
+				margin:10px auto;
+			}
+		}
+		
+		.parallax {
+			/* The image used */
+			background-image: url("./Images/agassi-building.jpg");
+
+			/* Set a specific height */
+			min-height: 300px;
+
+			/* Create the parallax scrolling effect */
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			
+			/* Centering content */
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			color: white;
+			text-align: center;
+		}
+
+		.info {
+			background: rgba(0, 0, 0, 0.5); /* Optional: To make text more readable */
+			padding: 20px;
+			//border-radius: 10px;
+			color:whitesmoke;
+			font-size:30px;
+			width:50%;
+		}
+		
+		.info a{
+			text-decoration:none;
+			color:whitesmoke;
+			padding:5px;
+			margin-block:5px;	
+		}
+		
+		.info a div{
+			border:3px solid white;
+		}
+		
+		.info a:hover{
+			background-color:whitesmoke;
+			color: goldenrod;
+		}
+	</style>
 </head>
 <body>
     <header class="scroll">
@@ -29,7 +216,7 @@
 			<nav class="navbar navbar-expand-lg bg-white box-shadow w-100">
 				<div class="container">
 					<img src="./Images/LOGO.png" alt="Logo" class="logo"> 
-					<a class="navbar-br text-dark text-decoration-none " href="#">AGASSI MEMORIAL SCHOOL</a>
+					<a class="navbar-br text-dark text-decoration-none " href="index.html">AGASSI MEMORIAL SCHOOL</a>
 					<!-- Toggle btn -->
 					<button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon "></span>
@@ -168,89 +355,25 @@
         </div><br>
     </section>-->
 	
-	<style>
-		.p-admissions-guide h1{
-			color:#5d0b06;
-			text-shadow:1px 1px 2px #5d0b06;
-			text-align:center;
-			margin:o;
-		}
-		
-		.p-admission-steps{
-			padding-bottom:30px;
-		}
-		
-		.is-p-admission-step{
-			background-color:goldenrod;
-			margin:10px;
-			color:#5d0b06;
-			border:4px solid #5d0b06;
-			padding:10px;
-			border-radius:10px;
-			width:40%;
-		}
-		
-		.is-p-admission-step h4{
-			color:#5d0b06;
-			text-shadow:1px 1px 2px black;
-		}
-		
-		.is-step-1{	
-			margin-left:7%;
-		}
-		
-		.is-step-2{	
-			margin-left:30%;
-		}
-		
-		.is-step-3{	
-			margin-left:55%;
-		}
-		
-		
-		
-		@media (max-width: 786px) {
-			.admission-steps{
-				display:block;
-			}
-			
-			.is-admission-step,
-			.is-p-admission-step{
-				width:80%;
-				margin:10px auto;
-			}
-			
-			.is-step-1,
-			.is-step-2,
-			.is-step-3,
-			.step-1,
-			.step-2,
-			.step-3,
-			.step-4,
-			.step-5,
-			.step-6{
-				margin:10px auto;
-			}
-		}
-	</style>
+	
 	<section class="p-admissions-guide">
 		<h1>PRESCHOOL</h1>
 		<div class="p-admission-steps">
-			<div class="is-p-admission-step is-step-1">
+			<div class="is-p-admission-step is-step-1" data-aos="fade-up">
 				<h4>Step 1: Contact the Headteacher</h4>
 				<p>
 					A prospective applicant/parent who intends to enroll his/her ward into our Pre-School must contact the Headteacher by visiting the School.
 				</p>
 			</div>
 			
-			<div class="is-p-admission-step is-step-2">
+			<div class="is-p-admission-step is-step-2" data-aos="fade-up">
 				<h4>Step 2: Submission of Documents</h4>
 				<p>
 					The applicant/parent must come along with the birth certificate of the child or any document that validly proves the name and age of the child to conclude the admission process.
 				</p>
 			</div>
 			
-			<div class="is-p-admission-step is-step-3">
+			<div class="is-p-admission-step is-step-3" data-aos="fade-up">
 				<h4> Step 3: Payment of Fees</h4>
 				<p>
 					The parent/guardian is required to pay the full fees for the chosen class. <strong>Note that this payment does not cover school uniforms, books, and transport fare.</strong>
@@ -261,122 +384,49 @@
 	</section>
 	
 	<style>
-		.admissions-guide{
-			background-image:url('./Images/graduation-9.jpg');
-			background-size:cover;
-		}
 		
-		.admissions-guide h1{
-			color:#5d0b06;
-			text-shadow:1px 1px 2px #5d0b06;
-			text-align:center;
-			margin:o;
-		}
-		
-		.admission-steps{
-			padding-bottom:30px;
-		}
-		
-		.is-admission-step{
-			background-color:whitesmoke;
-			margin:10px;
-			color:#5d0b06;
-			border:4px solid #5d0b06;
-			padding:10px;
-			border-radius:10px;
-			width:30%;
-		}
-		
-		.is-admission-step h4{
-			color:#5d0b06;
-			text-shadow:1px 1px 2px black;
-		}
-		
-		.step-1{	
-			margin-left:3%;
-		}
-		
-		.step-2{	
-			margin-left:15%;
-		}
-		
-		.step-3{	
-			margin-left:35%;
-		}
-		
-		.step-4{	
-			margin-left:45%;
-		}
-		
-		.step-5{	
-			margin-left:55%;
-		}
-		
-		.step-6{	
-			margin-left:65%;
-		}
-		
-		@media (max-width: 786px) {
-			.admission-steps{
-				display:block;
-			}
-			
-			.is-admission-step{
-				width:80%;
-				margin:10px auto;
-			}
-			
-			.step-1,
-			.step-2,
-			.step-3,
-			.step-4,
-			.step-5,
-			.step-6{
-				margin:10px auto;
-			}
-		}
 	</style>
 	
 	<section class="admissions-guide">
-		<div style="background-color:rgba(63, 142, 15, 0.8);">
+		<div style="background-color:rgba(0, 106, 62, 0.8);">
 			<h1>PRIMARY-JHS</h1>
 			<div class="admission-steps">
-				<div class="is-admission-step step-1">
+				<div class="is-admission-step step-1" data-aos="fade-down">
 					<h4>Step 1: Contact the Headteacher</h4>
 					<p>
 						The prospective applicant or parent should visit Agassi Memorial School to contact the Headteacher.
 					</p>
 				</div>
 				
-				<div class="is-admission-step step-2">
+				<div class="is-admission-step step-2" data-aos="fade-down">
 					<h4>Step 2: Entrance Examination</h4>
 					<p>
 						The child intending to enroll in classes from Basic One (BS 1) to Junior High School 2 (JHS 2) must write an entrance examination.
 					</p>
 				</div>
 				
-				<div class="is-admission-step step-3">
+				<div class="is-admission-step step-3" data-aos="fade-down">
 					<h4> Step 3: Provide Previous School Enrollment Proof</h4>
 					<p>
 						Alongside the entrance examination, the parent/guardian needs to show proof of enrollment and class from the child's previous school.
 					</p>
 				</div>
 				
-				<div class="is-admission-step step-4">
+				<div class="is-admission-step step-4" data-aos="fade-down">
 					<h4>Step 4: Initial Screening</h4>
 					<p>
 						 After the entrance examination, if the child passes the initial screening process successfully, the parent/guardian proceeds to the next step.
 					</p>
 				</div>
 				
-				<div class="is-admission-step step-5">
+				<div class="is-admission-step step-5" data-aos="fade-down">
 					<h4>Step 5: Payment of Fees</h4>
 					<p>
 						Upon successful screening, the parent/guardian is required to pay the full fees for the chosen class. <strong>Note that this payment does not cover school uniforms, books, and transport fare.</strong>
 					</p>
 				</div>
 				
-				<div class="is-admission-step step-6">
+				<div class="is-admission-step step-6" data-aos="fade-down">
 					<h4>Note: Rare Admission into JHS 3</h4>
 					<p>
 						It's important to note that Agassi Memorial School rarely admits children into Junior High School 3.
@@ -387,54 +437,9 @@
 	</section>
 	
 		<style>
-		.parallax {
-			/* The image used */
-			background-image: url("./Images/agassi-building.jpg");
-
-			/* Set a specific height */
-			min-height: 300px;
-
-			/* Create the parallax scrolling effect */
-			background-attachment: fixed;
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: cover;
-			
-			/* Centering content */
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			flex-direction: column;
-			color: white;
-			text-align: center;
-		}
-
-		.info {
-			background: rgba(0, 0, 0, 0.5); /* Optional: To make text more readable */
-			padding: 20px;
-			//border-radius: 10px;
-			color:whitesmoke;
-			font-size:30px;
-			width:50%;
-		}
 		
-		.info a{
-			text-decoration:none;
-			color:whitesmoke;
-			padding:5px;
-			margin-block:5px;	
-		}
-		
-		.info a div{
-			border:3px solid white;
-		}
-		
-		.info a:hover{
-			background-color:whitesmoke;
-			color:black;
-		}
 	</style>
-	<section class="to-next-page">
+	<section class="to-next-page" >
 		<div class="parallax">
 			<div class="info">
 				<h2>Want to know more?</h2>

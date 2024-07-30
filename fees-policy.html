@@ -12,6 +12,81 @@
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 		<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<link rel="icon" type="image/x-icon" href="./Images/logo.ico">
+
+		<style>
+		.is-stream{
+			border-radius:20px;
+			box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+			margin:30px 20px;
+			padding:5%;
+			color:navyblue;
+			font-size:20px;
+		}
+		
+		.is-stream img{
+			//border:2px solid red;
+			height:50px;
+		}
+		
+		.stream-1{
+			background-color:#4a9d00;
+		}
+		
+		.stream-2{
+			background-color:#e4cd05;
+		}
+		
+		.stream-3{
+			background-color:#b11f44;
+			color:whitesmoke;
+		}
+		
+		.parallax {
+			/* The image used */
+			background-image: url("./Images/agassi-building.jpg");
+
+			/* Set a specific height */
+			min-height: 300px;
+
+			/* Create the parallax scrolling effect */
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			
+			/* Centering content */
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			color: white;
+			text-align: center;
+		}
+
+		.info {
+			background: rgba(0, 0, 0, 0.5); /* Optional: To make text more readable */
+			padding: 20px;
+			//border-radius: 10px;
+			color:whitesmoke;
+			font-size:30px;
+			width:50%;
+		}
+		
+		.info a{
+			text-decoration:none;
+			color:whitesmoke;
+			border:3px solid white;
+			padding:5px;
+			margin-block:5px;	
+		}
+		
+		.info a:hover{
+			background-color:whitesmoke;
+			color:goldenrod;
+		}
+		
+	</style>
 </head>
 <body>
     <header class="scroll">
@@ -29,7 +104,7 @@
 			<nav class="navbar navbar-expand-lg bg-white box-shadow w-100">
 				<div class="container">
 					<img src="./Images/LOGO.png" alt="Logo" class="logo"> 
-					<a class="navbar-br text-dark text-decoration-none " href="#">AGASSI MEMORIAL SCHOOL</a>
+					<a class="navbar-br text-dark text-decoration-none " href="index.html">AGASSI MEMORIAL SCHOOL</a>
 					<!-- Toggle btn -->
 					<button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon "></span>
@@ -191,39 +266,10 @@
         </div>
     </section> -->
 	
-	<style>
-		.is-stream{
-			border-radius:20px;
-			box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-			margin:30px 20px;
-			padding:5%;
-			color:navyblue;
-			font-size:20px;
-		}
-		
-		.is-stream img{
-			//border:2px solid red;
-			height:50px;
-		}
-		
-		.stream-1{
-			background-color:#4a9d00;
-		}
-		
-		.stream-2{
-			background-color:#e4cd05;
-		}
-		
-		.stream-3{
-			background-color:#b11f44;
-			color:whitesmoke;
-		}
-		
-		
-	</style>
+	
 	
     <section class="not-welcome">
-        <div  class="is-stream stream-1">
+        <div  class="is-stream stream-1" data-aos="fade-up">
 			<div>
 				<img src="./Images/LOGO.png" alt="">
 				<h3> School Fees Payment</h3>
@@ -249,7 +295,7 @@
 			</div>
 		</div>
 			 
-		<div class="is-stream stream-2">
+		<div class="is-stream stream-2" data-aos="fade-up">
 			<div>
 				<img src="./Images/LOGO.png" alt="">
 				<h3> Canteen Fees</h3>
@@ -265,7 +311,7 @@
 			</div>
 			
 		</div>
-		<div class="is-stream stream-3">
+		<div class="is-stream stream-3" data-aos="fade-up">
 			<div>
 				<img src="./Images/LOGO.png" alt="">
 				<h3>Transportation Fares</h3>
@@ -288,7 +334,7 @@
 		</div>
     </section> 
 	 <section class="not-welcome">
-        <div  class="is-stream stream-1">
+        <div  class="is-stream stream-1" data-aos="fade-up">
 			<div>
 				<img src="./Images/LOGO.png" alt="">
 				<h3> Examination Fees</h3>
@@ -314,7 +360,7 @@
 			</div>
 		</div>
 			 
-		<div class="is-stream stream-2">
+		<div class="is-stream stream-2" data-aos="fade-up">
 			<div>
 				<img src="./Images/LOGO.png" alt="">
 				<h3>School Uniforms</h3>
@@ -352,7 +398,7 @@
 			</div>
 			
 		</div>
-		<div class="is-stream stream-3">
+		<div class="is-stream stream-3" data-aos="fade-up">
 			<div>
 				<img src="./Images/LOGO.png" alt="">
 				<h3>Textbooks</h3>
@@ -368,7 +414,7 @@
 			</div>
 			
 		</div>
-		<div  class="is-stream stream-1">
+		<div  class="is-stream stream-1" data-aos="fade-up">
 			<div>
 				<img src="./Images/LOGO.png" alt="">
 				<h3> Summary</h3>
@@ -413,49 +459,7 @@
     </section>
 
 <style>
-		.parallax {
-			/* The image used */
-			background-image: url("./Images/agassi-building.jpg");
-
-			/* Set a specific height */
-			min-height: 300px;
-
-			/* Create the parallax scrolling effect */
-			background-attachment: fixed;
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: cover;
-			
-			/* Centering content */
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			flex-direction: column;
-			color: white;
-			text-align: center;
-		}
-
-		.info {
-			background: rgba(0, 0, 0, 0.5); /* Optional: To make text more readable */
-			padding: 20px;
-			//border-radius: 10px;
-			color:whitesmoke;
-			font-size:30px;
-			width:50%;
-		}
 		
-		.info a{
-			text-decoration:none;
-			color:whitesmoke;
-			border:3px solid white;
-			padding:5px;
-			margin-block:5px;	
-		}
-		
-		.info a:hover{
-			background-color:whitesmoke;
-			color:black;
-		}
 	</style>
 	<section class="to-next-page">
 		<div class="parallax">
